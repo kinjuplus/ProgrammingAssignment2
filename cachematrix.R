@@ -2,7 +2,11 @@
 ## functions do
 
 ## Write a short comment describing this function
-
+## a matrix function for
+## 1. get current matrix variable
+## 2. set current matrix variable
+## 3. get inverse of current matrix variable
+## 4. set inverse of current matrix variable
 makeCacheMatrix <- function(x = matrix()) {
    inverse <-NULL
    set <- function(y){
@@ -20,7 +24,10 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## Write a short comment describing this function
-
+## 1. check if parameter x has cached inverse
+## 2. if cache exists, return  cache
+## 3. if cache doesn't exists, calculate inverse of x and
+## set inverse to cache
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
    inv <- x$getInverse()
